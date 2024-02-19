@@ -1,11 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./tailwind.config.js" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="raleway">
+    <header class="container lg:px-24 px-2 lg:my-5 my-2">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="text-2xl font-extrabold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal text-lg px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a
+            class="btn bg-[#1DD1001A] border-[#1dd100] text-[#1DD100] font-bold text-xl"
+            >Bus <img src="./images/bus-icon.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container lg:px-24 px-2 lg:my-5 my-2">
+        <div
+          class="hero bg-cover w-full lg:h-[90vh] h-[70vh] relative rounded-3xl"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-overlay bg-opacity-10 rounded-3xl"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-full">
+              <h1
+                class="mb-5 lg:text-6xl text-4xl lg:font-extrabold font-extrabold"
+              >
+                End-to-End Travel with <br />
+                <span class="text-[#1DD100]">P Paribahan</span>
+              </h1>
+              <p class="mb-5 lg:max-w-2xl">
+                Yes, you can run unit tests and view the results directly within
+                the app. <br />
+                The integrated testing features allow for a streamlined.
+              </p>
+              <button class="btn bg-[#1DD100] border-none">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+        <div class="lg:flex hidden">
+          <div
+            class="h-[20vh] w-96 mx-auto bg-white -translate-y-24 rounded-3xl border-4 border-b-[#1DD100]"
+          >
+            <div class="flex p-5 mt-4 gap-8">
+              <img src="./images/people.png" alt="" />
+              <h3 class="font-extrabold text-3xl">
+                500K +<br />
+                <span class="font-light text-sm">Registered users</span>
+              </h3>
+            </div>
+          </div>
+          <div
+            class="h-[20vh] w-96 mx-auto bg-white -translate-y-24 rounded-3xl border-4 border-b-[#1DD100]"
+          >
+            <div class="flex p-5 mt-4 gap-8">
+              <img src="./images/ticket-cupon.png" alt="" />
+              <h3 class="font-extrabold text-3xl">
+                1.7 lacks <br />
+                <span class="font-light text-sm">Tickets sold</span>
+              </h3>
+            </div>
+          </div>
+          <div
+            class="h-[20vh] w-96 mx-auto bg-white -translate-y-24 rounded-3xl border-4 border-b-[#1DD100]"
+          >
+            <div class="flex p-5 mt-4 gap-8">
+              <img src="./images/stoppage.png" alt="" />
+              <h3 class="font-extrabold text-3xl">
+                800K + <br />
+                <span class="font-light text-sm">Rental partners</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container lg:px-24 px-4 lg:my-2 my-2">
+        <h3 class="text-4xl font-extrabold text-center py-5">
+          Best offers for you
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 my-12">
+          <div class="flex lg:flex-row flex-col rounded-xl">
+            <div class="p-5">
+              <img class="w-full" src="./Images/Group 113.png" alt="" />
+            </div>
+          </div>
+
+          <div class="flex lg:flex-row flex-col rounded-xl">
+            <div class="p-5">
+              <img class="w-full" src="./images/Group 3602.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn border-[#1DD100] bg-white text-[#1DD100]">
+            See All offers
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="container lg:px-24 lg:my-14 px-2 my-6 bg-[#F7F8F8] rounded-t-3xl"
+      >
+        <div class="text-center py-16">
+          <h3 class="text-4xl font-extrabold text-center py-2">
+            P.H Paribahan
+          </h3>
+          <p class="text-center font-medium py-2 text-[#13131899]">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-6 my-12 p-5 rounded-xl">
+          <div class="lg:col-span-4">
+            <div class="  ">
+              <div class="flex justify-between">
+                <div class="">
+                  <a class="font-extrabold text-lg"
+                    ><img
+                      class="w-10"
+                      src="./images/bus-logo.png"
+                      alt=""
+                    />Greenline Paribahan <br />
+                    <span class="font-extralight"
+                      >Coach-009-WEB ! AC_Business</span
+                    ></a
+                  >
+                </div>
+                <div>
+                  <a
+                    class="btn bg-[#1DD1001A] border-[#1dd100] text-[#1DD100] font-bold lg:text-xl text-sm h-max"
+                  >
+                    <img src="./images/bus-icon.png" alt="" /> <span id="seat-left">40</span> Seats left</a
+                  >
+                </div>
+              </div>
+              <div
+                class="flex justify-between mt-2 border-b border-dashed mb-5 bg-[#F7F8F8]"
+              >
+                <div>
+                  <p>Route</p>
+                </div>
+                <div>
+                  <p>Dhaka-Sylhet</p>
+                </div>
+              </div>
+              <div
+                class="flex justify-between mt-2 border-b border-dashed mb-5"
+              >
+                <div>
+                  <p>Departure Time</p>
+                </div>
+                <div>
+                  <p>9 PM</p>
+                </div>
+              </div>
+              <div
+                class="flex lg:flex-row flex-col justify-between mt-2 border-b mb-5"
+              >
+                <a class="btn font-bold mb-2 text-sm"
+                  >Boarding Point - Laxmipur</a
+                >
+                <a class="btn font-bold mb-2 text-sm"
+                  >Dropping Point - Bogura</a
+                >
+                <a class="btn font-bold mb-2 text-sm">Est. Time - 11 Hour</a>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-1">
+            <div class="grid gap-6 lg:grid-cols-1 grid-cols-1">
+              <div class="relative bottom-20 lg:block hidden space-x-7">
+                <img src="./images/info-devider.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-1 price">
+            <div class="grid lg:grid-cols-2 grid-cols-1">
+              <div class="text-center">
+                <img class="w-full" src="./images/fare.png" alt="" />
+                <h1 class="text-2xl font-extrabold">550 TK</h1>
+                <p class="text-sm font-extralight">Per Seat</p>
+              </div>
+            </div>
+            <div class=""></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-extrabold border-b border-dashed mb-5 py-2">
+            Select Your Seat
+          </h3>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-6 gap-5">
+          <div class="lg:col-span-4">
+            <div class="flex justify-between border-b border-dashed">
+              <div class="flex flex-row">
+                <a href=""><img src="./images/seat-gray.png" alt="" /></a>
+                <p class="pl-4">Available</p>
+              </div>
+              <div class="flex flex-row">
+                <a href=""
+                  ><img src="./images/seat-green-filled.png" alt=""
+                /></a>
+                <p class="pl-4">Selected</p>
+              </div>
+            </div>
+            <div class="flex float-end lg:mt-10">
+              <button class="btn">
+                <img src="./images/Vector.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="lg:col-span-2">
+            <div class="flex justify-evenly border-b-2 border-dashed text-lg font-extrabold">
+             
+              <h1>Seat <span id="booking-seats" class="bg-[#1dd100] text-white"></span></h1>
+              <h1>Class</h1>
+              <h1>Price</h1>
+            </div>
+            <div class="flex justify-evenly border-b-2 border-dashed mt-5">
+              <h1 id="title-container" ></h1>
+              <h1 id="class-container"></h1>
+              <h1 id="price-container"></h1>
+            </div>
+            <div class="flex justify-evenly  text-lg font-bold">
+              <h1>Total Price</h1>
+              <h1></h1>
+              <h1>BDT <span id="totalPrice"></span></h1>
+            </div>
+
+            <div class="join flex justify-center lg:mt-5">
+              <input id="discount-input" class="input input-bordered join-item" placeholder="Have you any coupon?"/>
+              <button id="apply-btn" class="btn join-item bg-[#1DD100] text-white  ">Apply</button>
+            </div>
+
+            <div class="flex justify-evenly mt-5  text-lg font-bold">
+              <h1>Grand Total</h1>
+              <h1>BDT <span id="discountPrice"></span></h1>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-6 mt-5 ">
+          <div class="lg:col-span-4">
+            <div class="flex flex-row justify-between">
+              
+              <div class="grid-cols-1 lg:grid-cols-2 lg:space-x-20 space-x-3">
+                <button class="btn bg-[#F7F8F8] border-none">A</button>
+                <button class="btn bus px-10 seat">
+                  
+                  <h1>A1</h1>
+                  <p class="hidden">Economy</p>
+                  <h3 class="hidden">550</h3>
+                </button>
+                <button class="btn px-10 seat"><h1>A2</h1></button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat"><h1>A3</h1></button>
+                <button class="btn seat"><h1>A4</h1></button>
+              </div>
+            </div>
+            <div class="flex lg:flex-row justify-between mt-5">
+              <button class="btn bg-[#F7F8F8] border-none">B</button>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">B1</button>
+                <button class="btn seat">B2</button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">B3</button>
+                <button class="btn seat">B4</button>
+              </div>
+            </div>
+            <div class="flex lg:flex-row justify-between mt-5">
+              <button class="btn bg-[#F7F8F8] border-none">C</button>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">C1</button>
+                <button class="btn seat">C2</button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">C3</button>
+                <button class="btn seat">C4</button>
+              </div>
+            </div>
+            <div class="flex lg:flex-row justify-between mt-5">
+              <button class="btn bg-[#F7F8F8] border-none">D</button>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">D1</button>
+                <button class="btn seat">D2</button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">D3</button>
+                <button class="btn seat">D4</button>
+              </div>
+            </div>
+            <div class="flex lg:flex-row justify-between mt-5">
+              <button class="btn bg-[#F7F8F8] border-none">E</button>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">E1</button>
+                <button class="btn seat">E2</button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">E3</button>
+                <button class="btn seat">E4</button>
+              </div>
+            </div>
+            <div class="flex lg:flex-row justify-between mt-5">
+              <button class="btn bg-[#F7F8F8] border-none">F</button>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">F1</button>
+                <button class="btn seat">F2</button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">F3</button>
+                <button class="btn seat">F4</button>
+              </div>
+            </div>
+            <div class="flex lg:flex-row justify-between mt-5">
+              <button class="btn bg-[#F7F8F8] border-none">G</button>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">G1</button>
+                <button class="btn seat">G2</button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">G3</button>
+                <button class="btn seat">G4</button>
+              </div>
+            </div>
+            <div class="flex lg:flex-row justify-between mt-5">
+              <button class="btn bg-[#F7F8F8] border-none">H</button>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">H1</button>
+                <button class="btn seat">H2</button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">H3</button>
+                <button class="btn seat">H4</button>
+              </div>
+            </div>
+            <div class="flex lg:flex-row justify-between mt-5">
+              <button class="btn bg-[#F7F8F8] border-none">I</button>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">I1</button>
+                <button class="btn seat">I2</button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">I3</button>
+                <button class="btn seat">I4</button>
+              </div>
+            </div>
+            <div class="flex lg:flex-row justify-between mt-5">
+              <button class="btn bg-[#F7F8F8] border-none">J</button>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">J1</button>
+                <button class="btn seat">J2</button>
+              </div>
+              <div class="grid-cols-2 lg:space-x-40 space-x-3">
+                <button class="btn seat">J3</button>
+                <button class="btn seat">J4</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
